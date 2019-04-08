@@ -1,0 +1,69 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Login V1
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    / ===============================================================================================
+    %link{:href => "images/icons/favicon.ico", :rel => "icon", :type => "image/png"}/
+    / ===============================================================================================
+    %link{:href => "vendor/bootstrap/css/bootstrap.min.css", :rel => "stylesheet", :type => "text/css"}/
+    / ===============================================================================================
+    %link{:href => "fonts/font-awesome-4.7.0/css/font-awesome.min.css", :rel => "stylesheet", :type => "text/css"}/
+    / ===============================================================================================
+    %link{:href => "vendor/animate/animate.css", :rel => "stylesheet", :type => "text/css"}/
+    / ===============================================================================================
+    %link{:href => "vendor/css-hamburgers/hamburgers.min.css", :rel => "stylesheet", :type => "text/css"}/
+    / ===============================================================================================
+    %link{:href => "vendor/select2/select2.min.css", :rel => "stylesheet", :type => "text/css"}/
+    / ===============================================================================================
+    %link{:href => "css/util.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "css/main.css", :rel => "stylesheet", :type => "text/css"}/
+    / ===============================================================================================
+  %body
+    .limiter
+      .container-login100
+        .wrap-login100
+          .login100-pic.js-tilt{"data-tilt" => ""}
+            %img{:alt => "IMG", :src => "images/img-01.png"}/
+          %form.login100-form.validate-form
+            %span.login100-form-title
+              Member Login
+            .wrap-input100.validate-input{"data-validate" => "Valid email is required: ex@abc.xyz"}
+              %input.input100{:name => "email", :placeholder => "Email", :type => "text"}/
+              %span.focus-input100
+              %span.symbol-input100
+                %i.fa.fa-envelope{"aria-hidden" => "true"}
+            .wrap-input100.validate-input{"data-validate" => "Password is required"}
+              %input.input100{:name => "pass", :placeholder => "Password", :type => "password"}/
+              %span.focus-input100
+              %span.symbol-input100
+                %i.fa.fa-lock{"aria-hidden" => "true"}
+            .container-login100-form-btn
+              %button.login100-form-btn
+                Login
+            .text-center.p-t-12
+              %span.txt1
+                Forgot
+              %a.txt2{:href => "#"}
+                Username / Password?
+            .text-center.p-t-136
+              %a.txt2{:href => "#"}
+                Create your Account
+                %i.fa.fa-long-arrow-right.m-l-5{"aria-hidden" => "true"}
+    / ===============================================================================================
+    %script{:src => "vendor/jquery/jquery-3.2.1.min.js"}
+    / ===============================================================================================
+    %script{:src => "vendor/bootstrap/js/popper.js"}
+    %script{:src => "vendor/bootstrap/js/bootstrap.min.js"}
+    / ===============================================================================================
+    %script{:src => "vendor/select2/select2.min.js"}
+    / ===============================================================================================
+    %script{:src => "vendor/tilt/tilt.jquery.min.js"}
+    :javascript
+      $('.js-tilt').tilt({
+      	scale: 1.1
+      })
+    / ===============================================================================================
+    %script{:src => "js/main.js"}

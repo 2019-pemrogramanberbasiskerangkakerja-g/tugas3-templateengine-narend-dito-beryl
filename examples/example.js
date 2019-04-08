@@ -6,9 +6,9 @@ var util = require('util'),
 var options = {
   filename: 'page.haml',
   locals: {
-    title: 'Welcome',
-    body: 'wahoo',
-    usersOnline: 15
+    title: 'teshamlkehtml',
+    body: 'berhasil',
+    usersOnline: 9202
   }
 }
 
